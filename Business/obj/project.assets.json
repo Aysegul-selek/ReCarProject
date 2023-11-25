@@ -2812,7 +2812,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
+      "sha512": "LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
@@ -3036,7 +3036,7 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
+      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
@@ -3074,11 +3074,12 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
+      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5113,7 +5114,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "sha512": "2Z5t70a2SwMsfQDp9KOclaZNyQhfIga2gppq9lIUDM1A4ohTshn4JqT7ir8bvIhXgorWKYDAr6rPzEbi/nTGKg==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
@@ -6194,25 +6195,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rea-T\\.nuget\\packages\\": {},
+    "C:\\Users\\ayseg\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rea-T\\OneDrive\\Masaüstü\\ReCapProject\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\ayseg\\Desktop\\ReCarProject\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\Rea-T\\OneDrive\\Masaüstü\\ReCapProject\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\Rea-T\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rea-T\\OneDrive\\Masaüstü\\ReCapProject\\Business\\obj\\",
+      "projectPath": "C:\\Users\\ayseg\\Desktop\\ReCarProject\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\ayseg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ayseg\\Desktop\\ReCarProject\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rea-T\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ayseg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6227,11 +6228,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Rea-T\\OneDrive\\Masaüstü\\ReCapProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Rea-T\\OneDrive\\Masaüstü\\ReCapProject\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\ayseg\\Desktop\\ReCarProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\ayseg\\Desktop\\ReCarProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\Rea-T\\OneDrive\\Masaüstü\\ReCapProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\Rea-T\\OneDrive\\Masaüstü\\ReCapProject\\Entities\\Entities.csproj"
+            "C:\\Users\\ayseg\\Desktop\\ReCarProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\ayseg\\Desktop\\ReCarProject\\Entities\\Entities.csproj"
             }
           }
         }
@@ -6275,7 +6276,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
