@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 
 namespace DataAccess.Concrete.InMemory
 {
-    public class InMemoryCarDal : IcarDal
+    public class InMemoryCarDal 
     {
         List<Car> _car;
         public InMemoryCarDal()

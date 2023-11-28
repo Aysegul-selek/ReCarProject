@@ -32,3 +32,6 @@ C:\Users\ayseg\Desktop\ReCarProject\DataAccess\obj\Debug\net5.0\DataAccess.dll
 C:\Users\ayseg\Desktop\ReCarProject\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
 C:\Users\ayseg\Desktop\ReCarProject\DataAccess\obj\Debug\net5.0\DataAccess.pdb
 C:\Users\ayseg\Desktop\ReCarProject\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\ayseg\Desktop\ReCarProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\ayseg\Desktop\ReCarProject\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\ayseg\Desktop\ReCarProject\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache

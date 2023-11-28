@@ -156,3 +156,5 @@ C:\Users\ayseg\Desktop\ReCarProject\WebAPI\obj\Debug\net5.0\refint\WebAPI.dll
 C:\Users\ayseg\Desktop\ReCarProject\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 C:\Users\ayseg\Desktop\ReCarProject\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
 C:\Users\ayseg\Desktop\ReCarProject\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
+C:\Users\ayseg\Desktop\ReCarProject\WebAPI\bin\Debug\net5.0\Humanizer.dll
+C:\Users\ayseg\Desktop\ReCarProject\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

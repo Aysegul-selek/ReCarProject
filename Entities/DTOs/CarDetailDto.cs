@@ -13,6 +13,7 @@ namespace Entities.DTOs
         public string ModelName { get; set; }
         public string BrandName { get; set; }
         public string ColorName { get; set; }
+        public string File { get; set; }
         public decimal DailyPrice { get; set; }
         public string Description { get; set; }
     }

@@ -15,7 +15,16 @@ namespace WebAPI.Controllers
         {
             _carImageServices = carImageServices;
         }
-
+        [HttpGet("getbycarid")]
+        public IActionResult GetByImageId(int carId)
+        {
+            var result = _carImageServices.GetImagesByCarId(carId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
         [HttpGet("getall")]
         public IActionResult GetAll()
         {

@@ -8,12 +8,14 @@ namespace Business.Abstract
     public interface ICarServices
     {
         IDataResult<List<Car>>GetAll();
-        IDataResult<List<CarDetailDto>> GetCarDetailByBrandId(int brandId);//Brand e göre  getir
-        IDataResult<List<CarDetailDto>> GetCarDetailByColorId(int colorId);
+        IDataResult<List<Car>> GetCarsByBrandId(int brandId);
+        IDataResult<List<Car>> GetCarsByColorId(int colorId);
+      
         IDataResult<Car> GetById(int id);
         IResult Update(Car car);
         IResult Delete(Car car);
         IResult Add(Car car);
-        IDataResult<List<CarDetailDto>> GetCarDetail();
+        IDataResult<List<CarDetailDto>> GetCarDetails();
+        IDataResult<List<CarDetailDto>> GetCarDetailsId(int carId);
     }
 }

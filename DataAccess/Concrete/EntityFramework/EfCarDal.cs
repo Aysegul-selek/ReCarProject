@@ -5,19 +5,21 @@ using Entities.DTOs;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCarDal : EfEntityRepoSitoryBase<Car, RecapContext>, IcarDal
     {
-        public List<CarDetailDto> GetCarDetail()
+
+        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
         {
             using (RecapContext context = new RecapContext())
             {
-                var result = from car in context.cars
-                             join b in context.brands
+                var result = from car in context.Cars
+                             join b in context.Brands
                              on car.BrandId equals b.BrandId
-                             join c in context.colors
+                             join c in context.Colors
                              on car.ColorId equals c.ColorId
                              select new CarDetailDto
                              {
@@ -30,50 +32,13 @@ namespace DataAccess.Concrete.EntityFramework
                                  DailyPrice = car.DailyPrice,
                                  Description = car.Description,
                                  ModelYear = car.ModelYear,
-
+                                 File = (from ci in context.CarImages where ci.CarId == car.CarId select ci.File).FirstOrDefault()
                              };
-                return result.ToList();
-            }
-        }
 
-        public List<CarDetailDto> GetCarDetailByBrandId(int brandId)
-        {
-            using (RecapContext context = new RecapContext())
-            {
-                var result = from c in context.cars
-                             join b in context.brands
-                             on c.BrandId equals b.BrandId
-                             join d in context.colors
-                             on c.ColorId equals d.ColorId
-                             select new CarDetailDto
-                             {
-                                 CarId = c.CarId
-                             ,
-                                 BrandId = b.BrandId,
-                                 ColorId = c.ColorId,
-                                 BrandName = b.BrandName
-
-
-                             };
                 return result.ToList();
-            }
-        }
-            public List<CarDetailDto> GetCarDetailByColorId(int colorId)
-            {
-            using (RecapContext context=new RecapContext())
-            {
-                var result = from p in context.cars
-                             join c in context.colors
-                             on p.ColorId equals c.ColorId
-                             select new CarDetailDto
-                             {
-                                 CarId = p.CarId,
-                                 CarName = p.CarName,
-                                 ColorId = c.ColorId,
-                                 ColorName = c.ColorName,
-                             };
-                return result.ToList();
-            }
             }
         }
     }
+
+}
+
