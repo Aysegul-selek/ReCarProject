@@ -10,5 +10,16 @@ namespace Business.Constants
     {
         public static string Success = "İşlem Başarılı";
         public static string Error = "İşlem Başarısız";
+
+        public static string ThisCarIsAlreadyRentedInSelectedDateRange { get; internal set; }
+        public static string ReturnDateCannotBeEarlierThanRentDate { get; internal set; }
+        public static string ThisCarHasNotBeenReturnedYet { get; internal set; }
+        public static string ReturnDateCannotBeLeftBlankAsThisCarWasAlsoRentedAtALaterDate { get; internal set; }
+        public static string RentalDateCannotBeBeforeToday { get; internal set; }
+        public static string CustomerFindeksPointIsNotEnoughForThisCar { get; internal set; }
+        public static string CarNotFound { get; internal set; }
+        public static string PaymentDenied { get; internal set; }
+        public static string PaymentSuccessful { get; internal set; }
+        public static string ThisCardIsAlreadyRegisteredForThisCustomer { get; internal set; }
     }
 }

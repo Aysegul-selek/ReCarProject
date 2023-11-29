@@ -121,6 +121,36 @@ namespace DataAccess.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("Entities.Concrete.Payment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("CVV")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CardNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ExpiryMonth")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ExpiryYear")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Payments");
+                });
+
             modelBuilder.Entity("Entities.Concrete.Rental", b =>
                 {
                     b.Property<int>("RentalId")

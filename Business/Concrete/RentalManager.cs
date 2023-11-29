@@ -34,6 +34,16 @@ namespace Business.Concrete
             }
         }
 
+        public IDataResult<Rental> CheckRentalCarId(int carId)
+        {
+            var rental = _rental.Get(r => r.CarId == carId && r.ReturnDate == null);
+            if (rental != null)
+            {
+                return new ErrorDataResult<Rental>("Araç müsait değil, kiralanmış durumda");
+            }
+            return new SuccessDataResult<Rental>("Araç müsait, kiralanabilir durumda");
+        }
+
         public IResult Delete(Rental rental)
         {
             _rental.Delete(rental);

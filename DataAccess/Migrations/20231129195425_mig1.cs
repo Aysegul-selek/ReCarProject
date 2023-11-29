@@ -82,6 +82,24 @@ namespace DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Payments",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CustomerId = table.Column<int>(type: "int", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CVV = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ExpiryMonth = table.Column<int>(type: "int", nullable: false),
+                    ExpiryYear = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Payments", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Rentals",
                 columns: table => new
                 {
@@ -114,6 +132,9 @@ namespace DataAccess.Migrations
 
             migrationBuilder.DropTable(
                 name: "Customers");
+
+            migrationBuilder.DropTable(
+                name: "Payments");
 
             migrationBuilder.DropTable(
                 name: "Rentals");

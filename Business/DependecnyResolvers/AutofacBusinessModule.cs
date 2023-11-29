@@ -28,6 +28,8 @@ namespace Business.DependecnyResolvers.Autofac
             builder.RegisterType<CarImageManager>().As<ICarImageServices>().SingleInstance();
             builder.RegisterType<EfCarImageDal>().As<ICarImageDal>().SingleInstance();
             builder.RegisterType<FileHelperManager>().As<IFileHelper>().SingleInstance();
+            builder.RegisterType<PaymentManager>().As<IPaymentServices>().SingleInstance();
+            builder.RegisterType<EfPaymentDal>().As<IPaymentDal>().SingleInstance();
         }
     }
 }
