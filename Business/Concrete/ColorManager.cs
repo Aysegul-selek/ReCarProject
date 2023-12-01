@@ -34,8 +34,7 @@ namespace Business.Concrete
 
         public IResult Delete(Color color)
         {
-            if (color.ColorId == null)
-            { return new ErrorResult(Messages.Error); }
+           
             _colorDal.Delete(color);
             return new SuccessResult(Messages.Success);
         }
